@@ -1,6 +1,6 @@
 
 ### **1. Часть кода: Анимация движущегося квадрата**
-
+ ```javascript
 let ctx = document.getElementById('myCanvas').getContext('2d');
 let x = 50, dx = 2; // начальные координаты и скорость движения
 
@@ -14,9 +14,9 @@ function animate() {
         requestAnimationFrame(animate); // следующий кадр анимации
     }
 requestAnimationFrame(animate); // начальный вызов функции
-
+  ```
 ### **2. Управление квадратом с помощью клавиш (стрелки)**
-
+ ```javascript
 const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
 let x = canvas.width / 2;
@@ -63,9 +63,9 @@ function animate() {
 }
 
 animate();
-
+  ```
 ### **3. Следование квадрата за мышью**
-
+ ```javascript
 const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
 
@@ -87,9 +87,9 @@ function draw() {
     ctx.fillRect(square.x, square.y, square.size, square.size);
 }
 draw();
-
+  ```
 ### **4. Проверка столкновений**
-
+ ```javascript
 // Проверка столкновений
 function checkCollision() {
     if (x < enemyX + enemyWidth && x + 50 > enemyX && y < enemyY + enemyHeight && y + 50 > enemyY) {
@@ -104,7 +104,7 @@ function stopGame() {
     enemyDx = 0;
 }
 
-
+  ```
 Давайте подробно разберем предоставленный код, его функционал и задачи. Он представляет собой учебный материал, предназначенный для подготовки учащихся к созданию игры на основе Canvas API.
 
 ---
